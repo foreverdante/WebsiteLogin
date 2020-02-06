@@ -3,12 +3,15 @@
 #Created On: 1/28/20
 import getpass
 import re
+import time
 
 from resources.selenium import webdriver
 # import resources.selenium.webdriver.common.keys as keys
 # # from resources.selenium.webdriver.common import Keys
 # from time import sleep
 
+class InvalidInput(Exception):
+	pass
 
 class WebsiteLogin(object):
 	def __init__(self, website, username, password, options):
@@ -32,27 +35,33 @@ def gather_browser_options():
 			# print("Option {}".format(option_number))
 			# Get options to add to the option_flags[] list
 			option = input("Option {}: ".format(option_number))
-			option_flags.append(''.join(option))
+			option_flags.append(''.join(option.lower()))
 
 			# Iterate the number of options added to Chromium
 
 			continue_options = input("Continue [y/N] or [C]orrect previous "
 			                         "entry?: ")
-			if not re.match("[y|n|c]", continue_options.lower()):
-				print("Wrong input")
-				option_flags.remove(option)
-				# option_flags.remove(option)
-				continue
-			else:
-				if continue_options.lower() == "n":
-					for x in option_flags:
-						print("Adding the following flags: --{}".format(x))
-					state = False
-				elif continue_options.lower() == "c":
-					option_flags.remove(option)
-				else:
-					option_number += 1
+			try:
+				# Check to make sure correct input was used. If not, raise InvalidInput exception
+				if not re.match("[y|n|c]", continue_options.lower()):
+					raise InvalidInput
+					# If exception is raised, remove
+					# option_flags.remove(option)
+					# option_flags.remove(option)
 					continue
+				else:
+					if continue_options.lower() == "n":
+						for x in option_flags:
+							print("Adding the following flags: --{}".format(x))
+						state = False
+					elif continue_options.lower() == "c":
+						option_flags.remove(option)
+					else:
+						option_number += 1
+						continue
+			except InvalidInput:
+				print("Invalid Input")
+				option_flags.remove(option)
 	return option_flags
 
 def authentication():
@@ -66,17 +75,33 @@ def authentication():
 		username = input("Username: ")
 		password = getpass.getpass()
 		auth.update([('username', username), ('password', password)])
-		print(auth)
+	return auth.values()
 
+def start_browser(website):
+	options = gather_browser_options()
+	chrome_options = webdriver.ChromeOptions()
+	for option in options:
+		chrome_options.add_argument(option)
+	browser = webdriver.Chrome(options=chrome_options)
+	browser.get(website)
+		# username = browser.find_element_by_id("id_username")
+		# username.send_keys(info[0])
+		# password = browser.find_element_by_id("id_password")
+		# password.send_keys(info[1])
+	for num, name in enumerate(authentication()):
+		print("{}".format(name[0]))
 
 def main():
-	website = input("Please enter the full URI that will be used: ")
-	if website.startswith("https"):
-		gather_browser_options()
-		authentication()
-	else:
-		print("It is not working")
-		exit(1)
+	# website = input("Please enter the full URI that will be used: ")
+	# if website.startswith("https"):
+	# 	start_browser()
+	# if website.startswith("http"):
+	start_browser("http://127.0.0.1:8000/accounts/login")
+		# print(list(authentication())[1])
+	time.sleep(10)
+	# else:
+	# 	print("It is not working")
+	# 	exit(1)
 
 
 if __name__ == '__main__':
