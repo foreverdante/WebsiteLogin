@@ -1,0 +1,7 @@
+kios
+touch-events=enabled
+disable-pinch
+noerrdialogs
+disable-session-crashed-bubble
+app=$(head -n 1 /boot/fullpageos.txt | sed -e "s/{serial}/${SERIAL}/g")
+enable-auto-reload

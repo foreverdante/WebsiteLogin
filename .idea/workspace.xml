@@ -1,28 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a632f7d1-8f30-48c4-99e1-1d38ac4c6c09" name="Default Changelist" comment="" />
+    <list default="true" id="a632f7d1-8f30-48c4-99e1-1d38ac4c6c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/common/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/android/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/android/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/blackberry/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/blackberry/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/chrome/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/chrome/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/chrome/remote_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/chrome/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/chrome/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/action_chains.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/action_builder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/input_device.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/interaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/key_actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/key_input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/mouse_button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/pointer_actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/actions/pointer_input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/alert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/by.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/desired_capabilities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/html5/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/html5/application_cache.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/touch_actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/common/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/edge/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/edge/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/edge/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/edge/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/amd64/x_ignore_nofocus.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/extension_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/firefox_binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/firefox_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/remote_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/webdriver.xpi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/webdriver_prefs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/webelement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/firefox/x86/x_ignore_nofocus.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/ie/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/ie/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/ie/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/ie/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/opera/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/opera/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/opera/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/phantomjs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/phantomjs/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/phantomjs/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/errorhandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/file_detector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/getAttribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/isDisplayed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/mobile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/remote_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/switch_to.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/remote/webelement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/safari/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/safari/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/safari/remote_connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/safari/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/safari/webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/abstract_event_listener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/event_firing_webdriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/expected_conditions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/select.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/ui.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/support/wait.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/webkitgtk/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/webkitgtk/options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/webkitgtk/service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/selenium/webdriver/webkitgtk/webdriver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebsiteLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebsiteLogin.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebsiteLogin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-              <folding>
-                <element signature="e#62#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,39 +111,22 @@
       </list>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/WebsiteLogin.py" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2112" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WebsiteLogin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebsiteLogin" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1X3vivw0UPwusil9SA2Rew077ji" />
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resource" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resource" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,7 +141,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="WebsiteLogin" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="WebsiteLogin" type="PythonConfigurationType" factoryName="Python">
       <module name="WebsiteLogin" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,11 +162,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.WebsiteLogin" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -118,40 +176,17 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1800948" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32908705" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32908705" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915073" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32908705" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebsiteLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <element signature="e#62#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
