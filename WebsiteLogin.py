@@ -25,12 +25,12 @@ def gather_browser_options():
 	# Gather the flags to be applied to Chromium
 	option_flags = []
 	state = True
+	flags_question_bool = True
 	option_number = 1
 	flags_question = input("Are there flags you would like to attach with "
 	                   "Chromium? y/N: ")
 	if not re.match("[y|n]", flags_question.lower()):
-		print(flags_question)
-		raise InvalidInput
+		pass
 	elif flags_question.lower() == 'y':
 		print("Please add the options you would like to add to Chromium: ")
 		while state is True:
@@ -110,7 +110,9 @@ def start_browser(website):
 	password.send_keys(credentials[0][1])
 
 	# Find submit_button field and 'click' the button
-	# submit_button = browser.find_element_by_
+	time.sleep(3)
+	submit_button = browser.find_element_by_tag_name("button")
+	submit_button.click()
 
 def main():
 	website = input("Please enter the full URI that will be used: ")
