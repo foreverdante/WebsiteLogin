@@ -6,9 +6,9 @@ import re
 import time
 
 from resources.selenium import webdriver
-# import resources.selenium.webdriver.common.keys as keys
-# # from resources.selenium.webdriver.common import Keys
-# from time import sleep
+from resources.selenium.webdriver.support.ui import WebDriverWait
+from resources.selenium.webdriver.common.by import By
+from resources.selenium.webdriver.support import expected_conditions as EC
 
 class InvalidInput(Exception):
 	pass
@@ -38,7 +38,6 @@ def gather_browser_options():
 			if not True:
 				break
 			else:
-				# print("Option {}".format(option_number))
 				# Get options to add to the option_flags[] list
 				option = input("Option {}: ".format(option_number))
 				option_flags.append(''.join(option.lower()))
@@ -101,17 +100,29 @@ def start_browser(website):
 	browser = webdriver.Chrome(options=chrome_options)
 	browser.get(website)
 
-	# Find username field and insert username index in @credentials
-	username = browser.find_element_by_id("id_username")
-	username.send_keys(credentials[0][0])
+	# # Find username field and insert username index in @credentials
+	# username = browser.find_element_by_id("id_username")
+	# username.send_keys(credentials[0][0])
+	#
+	# # Find password field and insert password index in @credentials
+	# password = browser.find_element_by_id("id_password")
+	# password.send_keys(credentials[0][1])
 
-	# Find password field and insert password index in @credentials
-	password = browser.find_element_by_id("id_password")
+	username = WebDriverWait(browser, 10).until(
+		EC.presence_of_element_located((By.ID, 'id_username'))
+	)
+	password = WebDriverWait(browser, 10).until(
+		EC.presence_of_element_located((By.ID, 'id_password'))
+	)
+	username.send_keys(credentials[0][0])
 	password.send_keys(credentials[0][1])
 
 	# Find submit_button field and 'click' the button
-	time.sleep(3)
-	submit_button = browser.find_element_by_tag_name("button")
+	# submit_button = browser.find_element_by_tag_name("button")
+	# submit_button.click()
+	submit_button = WebDriverWait(browser, 10).until(
+		EC.element_to_be_clickable((By.XPATH, '/html/body/main/form/button'))
+	)
 	submit_button.click()
 
 def main():
